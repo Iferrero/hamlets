@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+        Awesome Template
+        http://www.templatemo.com/preview/templatemo_450_awesome
+        -->
+		<title>HAMLETS</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <meta name="keywords" content="Hamlets,micropobles">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+	<script>
+		var shiftWindow = function() {  };
+		window.addEventListener("hashchange", shiftWindow);
+		function load() { if (window.location.hash) shiftWindow(); }
+		// Make sure the DOM elements are loaded and accounted for
+		$(document).ready(function() {
+
+		  // Match to Bootstraps data-toggle for the modal
+		  // and attach an onclick event handler
+		  $('a[data-toggle="modal"]').on('click', function(e) {
+
+			// From the clicked element, get the data-target arrtibute
+			// which BS3 uses to determine the target modal
+			var target_modal = $(e.currentTarget).data('target');
+			// also get the remote content's URL
+			var remote_content = e.currentTarget.href;
+
+			// Find the target modal in the DOM
+			var modal = $(target_modal);
+			// Find the modal's <div class="modal-body"> so we can populate it
+			var modalBody = $(target_modal + ' .modal-body');
+
+			// Capture BS3's show.bs.modal which is fires
+			// immediately when, you guessed it, the show instance method
+			// for the modal is called
+			modal.on('show.bs.modal', function () {
+					// use your remote content URL to load the modal body
+					modalBody.load(remote_content);
+				}).modal();
+				// and show the modal
+
+			// Now return a false (negating the link action) to prevent Bootstrap's JS 3.1.1
+			// from throwing a 'preventDefault' error due to us overriding the anchor usage.
+			return false;
+		  });
+		});
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113061210-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-113061210-1');
+		</script>
+	<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"54119",secure:"54129"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+	
+	<body id="top" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-5" data-genuitec-path="/hamlets/WebRoot/index.html">
+
+		<!-- start preloader -->
+	<!--	<div class="preloader" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-5" data-genuitec-path="/hamlets/WebRoot/index.html">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>-->
+    	<!-- end preloader -->
+
+        <!--start header >
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-phone"></i><span> Phone</span>010-020-0340</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">awesome@company.com</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-4 col-xs-12">
+                        <ul class="social-icon">
+                            <li><span>Meet us on</span></li>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-apple"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+    	<!-- start navigation -->
+	
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"><a href="#about">PRESENTACIÓ DEL PROJECTE</a></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					 <a class="navbar-brand external" href="http://www.acup.cat/ca/project/recercaixa" target="_blank">
+                  <img src="images/Bandes Recercaixa 1.jpg" alt="Logo" style="width:475px;">
+				  
+                </a>
+				<a class="navbar-brand external" href="http://www.acup.cat/ca" target="_blank" style="vertical-align:bottom;">
+                  <img src="images/Logos Acup 2.jpg" alt="Logo" style="width:100px;float:right">
+                </a>
+				<a class="navbar-brand external" href="https://obrasociallacaixa.org" target="_blank" >
+                  <img src="images/Logos OSLC 2.jpg" alt="Logo" style="width:100px;float:right">
+                </a>
+			
+				<a class="navbar-brand external" style="padding:12px 0px 0px 75px !important;"  href="http://www.uab.cat" target="_blank" >
+                  <img src="images/logo-uab.png" alt="Logo" style="width:100px;float:right">
+                </a>
+				<a class="navbar-brand external" style="padding:12px 0px 0px 50px !important;" href="http://www.micropobles.cat" target="_blank">
+                  <img src="images/logo-micropobles.png" alt="Logo" style="width:75px;float:right">
+                </a>
+				<a href="es/index.html" class="navbar-brand external" style="font-size:11px;padding:12px 0px 0px 50px !important;">Castellano | </a><a href="en/index.html"  class="navbar-brand external" style="font-size:11px;padding:12px 0px 0px 20px !important;">English</a>
+				</div>
+				<!--<div class="btn-group" style="padding:12px 0px 0px 50px !important;"> 
+					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Català<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="es/index.html"  class="language external">Castellano</a></li>
+						<li><a href="en/index.html"  class="language external">English</a></li>
+					</ul>
+				</div>-->
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="#about">PRESENTACIÓ PROJECTE</a></li>
+						<li><a href="#service">DESENVOLUPAMENT</a></li>
+						<li><a href="#team">EQUIP</a></li>
+						<!--li><a href="#service">SERVICE</a></li>
+						<li><a href="#portfolio">PORTFOLIO</a></li-->
+						<li><a href="#links">ENLLAÇOS</a></li>
+						<li><a href="#contact">CONTACTE</a></li>	
+	
+					</ul>
+					<ul class="nav navbar-nav navbar-right external">
+					<li><a class="external" href="https://twitter.com/hashtag/Hamlets?src=hash" target="_blank">#HAMLETS</a></li>
+					<li><a class="external" href="https://twitter.com/@LIGIT_UAB" target="_blank">@LIGIT_UAB</a></li>
+					<li><a class="external" href="https://twitter.com/@micropobles" target="_blank">@micropobles</a></li>
+					<li><a class="external" href="https://twitter.com/@RicardMoren" target="_blank">@RicardMoren</a></li>
+					</ul>
+					
+				</div>
+				<!--final menú al header-->
+			</div>
+		</nav>
+		<!-- end navigation -->
+
+    	<!-- start home -->
+    	<section id="home">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-offset-2 col-md-8">
+    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s"><span>HAMLETS</span></h1>
+    					<div class="element">
+                            <div class="sub-element">Immigració i desenvolupament sostenible a micropobles</div>
+							
+                        </div>
+						<div >
+                            
+                        </div>
+    					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s" onclick="setTimeout('scrollBy(0, -200)',500)">PRESENTACIÓ DEL<BR> PROJECTE</a>
+						<a data-scroll href="#service" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s" onclick="setTimeout('scrollBy(0, -200)',500)">DESENVOLUPAMENT</a>
+						<script>
+						document.write("<a data-scroll href='http://atlantis.uab.cat/hamlet/locale?request_locale=" + document.documentElement.lang +  "' class='btn btn-default wow fadeInUp' data-wow-offset='50' data-wow-delay='0.6s'>GIS Hamlets</a>");
+						</script>
+						<a data-scroll href="#contact" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s" onclick="setTimeout('scrollBy(0, -200)',500)">CONTACTE</a>
+						<a data-scroll href="#links" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s" onclick="setTimeout('scrollBy(0, -200)',500)">ENLLAÇOS</a>
+					</div>
+    			</div>
+				
+    		</div>
+			
+			<h2>Granera (Moianès)</h2><br><h3> Juny 2017. Autor:Ricard Morén.</h3>
+    	</section>
+    	<!-- end home -->
+
+		
+    
+
+    	<!-- start about -->
+    	<section id="about">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>Presentació del projecte </span> HAMLETS</h2>
+    				</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+
+    				</div>
+					<div class="col-md-10 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    					<!--i class="fa fa-laptop"></i-->
+    					<p>El projecte de recerca aplicada  <span>“HAMLETS. Immigració i desenvolupament sostenible als micropobles”</span>,  ha rebut el suport de <span>RecerCaixa2016</span>, un Programa impulsat per l’Obra Social de “la Caixa” amb la col·laboració de l’Associació d’Universitats Públiques de Catalunya (ACUP). Es tracta d’un projecte desenvolupat des de la <span>Universitat Autònoma de Barcelona (UAB)</span> per un equip inter-disciplinar (DdG, LIGIT i ICTA) dirigit per Ricard Morén-Alegret, amb la col·laboració activa de l’Associació de Micropobles de Catalunya (AMC). La durada mínima del projecte de recerca és de 2 anys a partir del seu inici durant la primavera de 2017.</p>
+						<p>La sostenibilitat dels micropobles (entesos com municipis amb menys de 500 habitants) està amenaçada degut - entre altres factors - a la despoblació, mentre persones en migració o amb projectes cerquen on viure. Envelliment i despoblament fan aquests territoris, sovint rurals, més vulnerables a perills com incendis forestals o especulació descontrolada, amenaçant la seva existència. </p>
+						<p>En anglès, <em>‘hamlet’</em> significa petit poble i, alhora, Hamlet protagonitza una tragèdia existencial de William Shakespeare. Aquest projecte investigarà la geografia humana, la sostenibilitat i el debat sobre el ‘ser o no ser’ dels micropobles, que signifiquen més d’un terç de la superfície territorial de Catalunya però on menys d’un 2% de la població d’aquest país resideix. Aquesta molt baixa densitat poblacional és un repte de grans dimensions pel present i el futur del país</p>
+						<p>Així doncs, el projecte HAMLETS vol informar científicament als actors polítics i debatre amb ells. En aquest sentit, l’Associació de Micropobles de Catalunya, entitat de governs locals que agrupa centenars d’ajuntaments de municipis amb menys de 500 habitants, participa activament en el projecte.</p>
+						<p>La hipòtesi principal és que <span>la immigració (internacional i interna) té potencial per contribuir social, econòmica, mediambiental i culturalment al desenvolupament sostenible de molts micropobles.</span></p>
+						<p>Durant el període 2017-2019, el principal àmbit territorial d’estudi i el gruix de treball estadístic, documental i de camp es realitzarà a la comunitat autònoma de Catalunya, però també es desenvoluparan petits treballs de camp comparatius al Departament dels Pirineus Orientals (França), així com a la República d’Irlanda (Eire) i a Irlanda del Nord (Regne Unit). </p>
+						<p><b>Resumidament, els principals objectius del projecte HAMLETS són:</b></p>
+						<ol>
+							<p>
+								<li>Conèixer millor l’arribada i assentament d’immigrants a micropobles a través de treball estadístic, treball documental i treball de camp en alguns municipis amb poca població que ja fa anys que acullen immigració</li>
+								<li>Realitzar recerca-acció participativa amb immigrants que ja implementen iniciatives de desenvolupament sostenible a micropobles.</li>
+								<li>Recollir dades i dissenyar, amb l’Associació de Micropobles de Catalunya, una pàgina web amb un innovador Sistema d’Informació Geogràfica d’accés obert (GISASH) que ajudi aquests municipis en l’arribada i acollida de nouvinguts, així com orienti potencials migrants abans del desitjat moviment migratori cap a micropobles.</li>
+							</p>
+						</ol>
+						<p></p>
+					</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    				
+					</div>
+					
+    			
+    			</div>
+				
+    		</div>
+    	</section>
+		
+		  	<!-- start service -->
+    	<section id="service">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">DESENVOLUPAMENT</h2>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-cloud"></i>
+    					<h4>Sondeig previ</h4>
+    					<p>Des de finals de maig de 2017 i durant la primera fase del projecte, es desenvolupa un sondeig preliminar entres els ajuntaments dels 336 municipis amb menys de 500 habitants que hi ha a Catalunya segons el padró (MUNICAT,2016). D'aquesta manera, es coneix millor la situació demo-geogràfica de partida en els micropobles, així com algunes de les principals necessitats i desafiaments.</p>
+					</div>
+    				<div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					<script>
+						//document.write("<a href=''><i class='fa fa-laptop' ></i></a>");
+						document.write("<a href='http://atlantis.uab.cat/hamlet/locale?request_locale=" + document.documentElement.lang +  "'><i class='fa fa-laptop' ></i></a>");
+						</script>
+    					<h4>SIG Hamlets</h4>
+    					<p>Durant la fase inicial del projecte s'està desenvolupant una aplicació GIS web que permeti publicar i difondre informació sobre les característiques i la gamma de serveis disponibles als diferents micropobles.Aquest SIG (anomenat GISASH) consta de vàries dimensions amb diverses alimentacions de dades: una part vinculada a IDESCAT de forma automàtica (i una secció vinculada a EUROSTAT), una part que editarà l’equip de recerca i una tercera part que editarà l’Associació de Micropobles de Catalunya, entre altres.</p>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-twitter"></i>
+    					<h4>Comunicació via twitter</h4>
+    					<p>Desde juny de 2017, en el marc del projecte de recerca aplicada 'HAMLETS. Immigració i desenvolupament sostenible als micropobles' es van publicant amb ànim divulgatiu tweets amb algunes dades demo-geogràfiques i fotos il·lustratives que es van fent a municipis amb menys de 500 habitants. Aquestes imatges posteriorment es vincularan al Sistema d’Informació Geogràfica (GISASH) que s'està desenvolupant des de LIGIT. En aquest sentit, aquestes piulades inicials s'estan també vinculant amb tuits que es realitzen des del LIGIT a partir de l'anàlisi de l'evolució de capes d'usos del sòl, CORINE Land Cover 1990-2012. La periodicitat de publicació habitual és de varis tuits setmanals. El hashtag principal és #HAMLETS i dos comptes de twitter que podeu seguir per anar rebent informació del projecte són: d'una banda,  @LIGIT_UAB i, d'altra banda, @RicardMoren.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+		
+		<!-- start team -->
+    	<section id="team">
+		
+		<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-lg">
+         <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>			<!-- /modal-header -->
+            <div class="modal-body">
+       
+            </div>			<!-- /modal-body -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>			<!-- /modal-footer -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>EQUIP</span></h2>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+    					<a data-toggle="modal"  href="team/Moren.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img1.jpg" class="img-responsive" alt="team img 1"-->
+									<div class="team-des">
+										<h4>Ricard Morén-Alegret</h4>
+										<span>Investigador Principal</span>
+										<p>Dept. Geografia, UAB</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+    					<a data-toggle="modal"  href="team/Romagosa.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Francesc Romagosa</h4>
+										<span>Investigador</span>
+										<p>Dept. Geografia, UAB</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Vargas.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img3.jpg" class="img-responsive" alt="team img 3"-->
+									<div class="team-des">
+										<h4>Miquel Àngel Vargas</h4>
+										<span>Investigador</span>
+										<p>LIGIT, UAB</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/Kallis.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img4.jpg" class="img-responsive" alt="team img 4"-->
+									<div class="team-des">
+										<h4>Giorgos Kallis</h4>
+										<span>Investigador</span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+					<br>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Freixa.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img1.jpg" class="img-responsive" alt="team img 1"-->
+									<div class="team-des">
+										<h4>Mª Carme Freixa</h4>
+										<span>Investigadora</span>
+										<p>Presidenta de l'Associació de Micropobles de Catalunya</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/McAreavey.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Ruth McAreavey</h4>
+										<span>Investigadora</span>
+										<p>University of Newcastle, UK</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Bene.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img3.jpg" class="img-responsive" alt="team img 3"-->
+									<div class="team-des">
+										<h4>Daniela Del Bene</h4>
+										<span>Investigadora</span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/Sekulova.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img4.jpg" class="img-responsive" alt="team img 4"-->
+									<div class="team-des">
+										<h4>Filka Sekulova</h4>
+										<span>Investigadora</span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+    				</div>	
+					<br>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Cattaneo.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img1.jpg" class="img-responsive" alt="team img 1"-->
+									<div class="team-des">
+										<h4>Claudio Cattaneo</h4>
+										<span>Investigador </span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/Demaria.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Federico Demaria</h4>
+										<span>Investigador</span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Gomez.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img3.jpg" class="img-responsive" alt="team img 3"-->
+									<div class="team-des">
+										<h4>Eva Gómez Colell</h4>
+										<span>Investigadora</span>
+										<p>Responsable de comunicació de l'Associació de Micropobles de Catalunya</p>
+									</div>
+							</div>
+						</a>
+    				</div>
+    							
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end team -->
+		
+	
+		<!--inici fotos fi presentacio>
+		<section id="portfolio">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+    					   <img src="images/esponella.jpg" class="img-responsive" alt="portfolio img 1">
+                                <div class="portfolio-overlay">
+                                    <h4>Project One</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/latallada.jpg" class="img-responsive" alt="portfolio img 2">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Two</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/vilamacolum.jpg" class="img-responsive" alt="portfolio img 3">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Three</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/pinell.jpg" class="img-responsive" alt="portfolio img 4">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Four</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- final fotos presentació -->
+
+  
+		<section id="links">
+    		<div class="container">
+				<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>ENLLAÇOS</span></h2>
+    				</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+
+    				</div>
+					<div class="col-md-6" data-wow-offset="100" data-wow-delay="0.6s">
+    					<!--i class="fa fa-laptop"></i-->
+    					<p><h3><a href="https://obrasociallacaixa.org/" target="_blank">Obra Social de 'la Caixa'</a></h3></p>
+						<p><h3><a href="http://www.acup.cat" target="_blank">Associació Catalana d'Universitats Públiques (ACUP)</a></h3></p>					
+						<p><h3><a href="http://www.acup.cat/ca/project/recercaixa" target="_blank">RecerCaixa</a></h3></p>
+						<hr>
+						<p><h3><a href="http://www.uab.cat/" target="_blank">Universitat Autònoma de Barcelona (UAB)</a></h3></p>
+						<p><h3><a href="https://www.micropobles.cat" target="_blank">Associació de Micropobles de Catalunya</a></h3></p>
+						<p><h3><a href="http://www.uab.cat/departament/Geografía/ " target="_blank">Departament de Geografía UAB</a></h3></p>
+						<p><h3><a href="http://ictaweb.uab.cat/" target="_blank">ICTA, UAB</a></h3></p>
+						<p><h3><a href="http://ligit0.uab.es/WEB2/" target="_blank">LIGIT, UAB</a></h3></p>
+						<p><h3><a href="http://Geografia.uab.es/migracions/cas/index.htm" target="_blank">GRM-GEO-UAB</a></h3></p>
+						<p><h3><a href="https://twitter.com/Resmi_Red " target="_blank"><image src="images/LogoREsMiColor.jpg"></image></a></h3></p>
+						
+						
+					</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+					
+					</div>
+                    <div class="col-md-4 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+					<br>            
+					                       <a class="twitter-timeline" data-height="650"  href="https://twitter.com/search?q=from%3A%40LIGIT_UAB%20OR%20from%3A%40RicardMoren" data-widget-id="917662909785927680">Tweets sobre from:@LIGIT_UAB OR from:@RicardMoren</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+          
+					</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    				
+					</div>
+					
+    			
+    			</div>
+				
+    		</div>
+    	</section>
+    	<!-- end servie -->
+
+    	<!-- start portfolio-->
+    	
+    	<!-- end portfolio -->
+
+    	<!-- start contact -->
+    	<section id="contact">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACTAR AMB <span>HAMLETS</span></h2>
+    				</div>
+    				<div class="col-md-5 col-sm-5 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+    					<form action="EmailSendingServlet" method="post">
+    						<label>NOM</label>
+    						<input name="fullname" type="text" class="form-control" id="fullname">
+   						  	
+                            <label>EMAIL</label>
+    						<input name="from" type="email" class="form-control" id="email">
+   						  	
+                            <label>MISSATGE</label>
+    						<textarea name="content" rows="4" class="form-control" id="message"></textarea>
+    						<input type="hidden" name="recipient" value="Ricard.Moren@uab.cat"/>
+                            <input type="submit" class="form-control" value="Enviar Consulta *">
+    					</form>
+    				</div>
+    				<div class="col-md-7 col-sm-7 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+    					<address>
+    						<p class="address-title">ADREÇA</p>
+    						<!--<p><i class="fa fa-phone"></i> </p>
+    						<p><i class="fa fa-envelope-o"></i></p>-->
+    						<p><i class="fa fa-map-marker"></i> Despatx B9-1068, Departament de Geografia, Universitat Autònoma de Barcelona, 08193, Bellaterra (Barcelona), Espanya.</p>
+    					</address>
+    					<ul class="social-icon">
+    						<li><h4>SOM SOCIALS</h4></li>
+    						<li><a href="https://ca-es.facebook.com/micropobles" target="_blank"class="fa fa-facebook"></a></li>
+    						<li><a href="https://twitter.com/@micropobles" target="_blank" class="fa fa-twitter"></a></li>
+    						<li><a href="https://www.instagram.com/explore/tags/micropobles/?hl=cat" target="_blank" class="fa fa-instagram"></a></li>
+    					</ul>
+
+    				</div>
+    				 <div class="col-md-7 col-sm-7 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s"style="font-size:12px;text-align:justify;">   					
+    					<br><br><br><br>
+    					* Les vostres dades seran tractades i emmagatzemades al fitxer de dades anomenat "Hamlets DB", fitxer de dades de caràcter personal, inscrit al Registre de Protecció de Dades de Catalunya, amb el codi 217216002-T, d'acord amb la norma esmentada (Llei 32/2010, de l'1 d'octubre, de l'Autoritat Catalana de Protecció de Dades).
+    					
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end contact -->
+
+        <!-- start copyright -->
+       <footer id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+                       	Copyright &copy; 2017 Universitat Autònona de Barcelona <a style="color:inherit;padding-left:15em" href="http://www.blogcounter4free.com" target="_blank">Visites: <img src="http://www.reliablecounter.com/count.php?page=atlantis.uab.cat/hamlets17098375&digit=style/plain/14/&reloads=0" alt="" title="" border="0"></a><br /> </p>
+																				
+                    </div>
+                </div>
+				
+            </div>
+        </footer>
+        <!-- end copyright -->
+
+	</body>
+</html>

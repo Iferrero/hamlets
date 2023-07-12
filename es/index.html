@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+        Awesome Template
+        http://www.templatemo.com/preview/templatemo_450_awesome
+        -->
+		<title>HAMLETS</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Hamlets,micropobles">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+	<script>
+		var shiftWindow = function() {  };
+		window.addEventListener("hashchange", shiftWindow);
+		function load() { if (window.location.hash) shiftWindow(); }
+		// Make sure the DOM elements are loaded and accounted for
+		$(document).ready(function() {
+
+		  // Match to Bootstraps data-toggle for the modal
+		  // and attach an onclick event handler
+		  $('a[data-toggle="modal"]').on('click', function(e) {
+
+			// From the clicked element, get the data-target arrtibute
+			// which BS3 uses to determine the target modal
+			var target_modal = $(e.currentTarget).data('target');
+			// also get the remote content's URL
+			var remote_content = e.currentTarget.href;
+
+			// Find the target modal in the DOM
+			var modal = $(target_modal);
+			// Find the modal's <div class="modal-body"> so we can populate it
+			var modalBody = $(target_modal + ' .modal-body');
+
+			// Capture BS3's show.bs.modal which is fires
+			// immediately when, you guessed it, the show instance method
+			// for the modal is called
+			modal.on('show.bs.modal', function () {
+					// use your remote content URL to load the modal body
+					modalBody.load(remote_content);
+				}).modal();
+				// and show the modal
+
+			// Now return a false (negating the link action) to prevent Bootstrap's JS 3.1.1
+			// from throwing a 'preventDefault' error due to us overriding the anchor usage.
+			return false;
+		  });
+		});
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113061210-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-113061210-1');
+		</script>
+	</head>
+	
+	<body id="top">
+
+		<!-- start preloader -->
+	<!--<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>-->
+    	<!-- end preloader -->
+
+        <!--start header >
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-phone"></i><span> Phone</span>010-020-0340</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">awesome@company.com</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-4 col-xs-12">
+                        <ul class="social-icon">
+                            <li><span>Meet us on</span></li>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-apple"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+    	<!-- start navigation -->
+	
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"><a href="#about">PRESENTACION</a></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand external" style="padding:12px 0px 0px 75px !important;" href="https://cordis.europa.eu/project/id/101023968" target="_blank">
+						<img src="images/0_LOGO.jpg" alt="Logo" style="width:75px;float:right">
+					</a>
+					<a class="navbar-brand external" style="padding:12px 0px 0px 50px !important;"  href="https://www.uab.cat/es" target="_blank" >
+					<img src="images/logo-uab.png" alt="Logo" style="width:75px;float:right">
+					</a>
+					<a class="navbar-brand external" style="padding:12px 0px 0px 30px !important;" href="https://www.acup.cat/en/project/recercaixa" target="_blank">
+					  <img src="images/4_Recercaixa.jpg" alt="Logo" style="width:150px;">
+					</a>
+					<a class="navbar-brand external" style="padding:12px 0px 0px 30px !important;" href="https://www.acup.cat/es" target="_blank" style="vertical-align:bottom;">
+					  <img src="images/Logos Acup 2.jpg" alt="Logo" style="width:75px;float:right">
+					</a>
+					<a class="navbar-brand external" style="padding:12px 0px 0px 30px !important;" href="https://obrasociallacaixa.org" target="_blank" >
+					  <img src="images/Logos OSLC 2.jpg" alt="Logo" style="width:75px;float:right">
+					</a>
+					<a class="navbar-brand external" style="padding:12px 0px 0px 50px !important;" href="https://www.micropobles.cat" target="_blank">
+					  <img src="images/logo-micropobles.png" alt="Logo" style="width:75px;float:right">
+					</a>
+					<a class="navbar-brand external" style="padding:30px 0px 0px 50px !important;" href="https://www.xn--esmontaas-r6a.org/" target="_blank">
+					  <img src="images/logo-esmontanas.png" alt="Logo" style="width:75px;float:right">
+					</a>
+
+				<a href="../index.html" class="navbar-brand external" style="font-size:11px;padding:12px 0px 0px 50px !important;">Catalán | </a><a href="../en/index.html"  class="navbar-brand external" style="font-size:11px;padding:12px 0px 0px 20px !important;">English</a>
+				<!--<div class="btn-group" style="padding:12px 0px 0px 50px !important;"> 
+					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Castellano<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../index.html" class="language external">Catalán</a></li>
+						<li><a href="../en/index.html" class="language external">English</a></li>
+						
+					</ul>
+				</div>-->
+						
+					
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a style="font-size: 11px;" href="#about">PRESENTACIÓN</a></li>
+						<li><a style="font-size: 11px;" href="#service">DESARROLLO</a></li>
+						<li><a style="font-size: 11px;" href="#team">EQUIPO</a></li>
+						<!--li><a href="#service">SERVICE</a></li>
+						<li><a href="#portfolio">PORTFOLIO</a></li-->
+						<li><a style="font-size: 11px;" href="#links">ENLACES</a></li>
+						<li><a style="font-size: 11px;" href="#contact">CONTACTO</a></li>		
+						<li><a style="font-size: 11Spx;" class="external" style="color:red;font-size:16px" href="https://atlantis.uab.cat/hamlet/public?request_locale=en" target="_self">Visor mapas</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right external">
+					
+					<li><a class="external" style="font-size: 11px;" href="https://twitter.com/hashtag/Hamlets?src=hash" target="_blank">#HAMLETS</a></li>
+					<!--<li><a class="external" href="https://twitter.com/@LIGIT_UAB" target="_blank">@LIGIT_UAB</a></li>-->
+					<li><a class="external" style="font-size: 11px;" href="https://twitter.com/hashtag/micropobles?src=hash" target="_blank">#micropobles</a></li>
+					<li><a class="external" style="font-size: 11px;" href="https://twitter.com/hashtag/Surdim?src=hash" target="_blank">#SURDIM</a></li>
+					<li><a class="external" style="font-size: 11px;" href="https://twitter.com/@RicardMoren" target="_blank">@RicardMoren</a></li>
+					<li><a class="external" style="font-size: 11px;" href="https://twitter.com/@CMendozaPerez" target="_blank">@CMendozaPerez</a></li>
+					</ul>
+					
+				</div>
+				<!--final menú al header-->
+			</div>
+		</nav>
+		<!-- end navigation -->
+
+    	<!-- start home -->
+    	<section id="home">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-offset-2 col-md-8">
+    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s"><span>SURDIM Y HAMLETS</span></h1>
+    					<div class="element">
+                            <div class="sub-element">Inmigración y desarrollo sostenible en micropueblos</div>
+							
+                        </div>
+						<div >
+                            
+                        </div>
+    					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s" onclick="setTimeout('scrollBy(0, -200)',500)">PRESENTACIÓN PROYECTO</a>
+						<a data-scroll href="#service" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s" onclick="setTimeout('scrollBy(0, -200)',500)">DESARROLLO</a>
+						<script>
+						document.write("<a data-scroll href='https://atlantis.uab.cat/hamlet/public?request_locale=" + document.documentElement.lang +  "' class='btn btn-default wow fadeInUp' data-wow-offset='50' data-wow-delay='0.6s'>GIS</a>");
+						</script>
+						<a data-scroll href="#contact" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s" onclick="setTimeout('scrollBy(0, -200)',500)">CONTACTO</a>
+						<a data-scroll href="#links" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s" onclick="setTimeout('scrollBy(0, -200)',500)">ENLACES</a>
+					</div>
+    			</div>
+				
+    		</div>
+			
+			<h2>Granera (Moianès)</h2><br><h3> Junio 2017. Autor:Ricard Morén.</h3>
+    	</section>
+    	<!-- end home -->
+
+    
+
+    	<!-- start about -->
+    	<section id="about">
+    		<div class="container">
+				<div class="row">
+    				<div class="col-md-12">
+						<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">Presentación</h2>
+					</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s"></div>
+					<div class="col-md-10 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    					<p>
+							<span>Bienvenida </span> a la página web de la  <span> llínea de investigación de la UAB sobre inmigración rural.</span> 
+						</p>
+						<p>
+							Este sitio web ofrece actualmente varios contenidos relacionados con los proyectos   <span> SURDIM</span>  (2021-2023) y <span> HAMLETS </span>  (2017-2020) 
+						</p>
+    				</div>
+				</div>
+				<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"> Proyecto <span>SURDIM</span> </h2>
+    				</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+
+    				</div>
+					<div class="col-md-10 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    					<!--i class="fa fa-laptop"></i--> 
+    					<p>El proyecto actual SURDIM  ( <span>Sustainable Rural Development and International Immigration in the Pyrenees</span>)  es un proyecto financiado 
+							por la Unión Europea y realizado principalmente en la Universidad Autónoma de Barcelona (UAB). El proyecto empezó en noviembre 2021 y durará, 
+							como mínimo, hasta finales del año 2023. Su objetivo principal es estudiar el papel que pueden jugar los inmigrantes internacionales en el 
+							desarrollo rural sostenible en el Pirineo. El equipo de investigación está formado mayormente por Dr. <span>Cristóbal Mendoza</span> 
+							 (responsable científico del proyecto, MSCA Research Fellow. UAB. Departamento de Geografía), 
+							Dr <span>Ricard Morén-Alegret</span> (supervisor científico del proyecto, PI, UAB, Departamento de Geografía e ICTA),
+							 Dr <span>Giorgos Kallis</span> (co-supervisor científico, UAB-ICTA) y Dr. <span>William Berthomière</span> (co-supervisor científico en Francia, grupo de investigación del CNRS Passages-Lab. Université de Bordeaux).  </p>
+						<p><span> ¿Cómo los inmigrantes revitalizan los pueblos rurales? </span> </p>
+						<p>
+							Los inmigrantes tienen un papel activo en el mantenimiento de los pueblos agrícolas y, en general, de los asentamientos rurales que, de otro modo, 
+							podrían experimentar procesos de despoblación o envejecimiento. La región que comprende la cordillera de los Pirineos, dividida administrativamente 
+							entre Francia y España, no es una excepción. Los inmigrantes han contribuido a la revitalización social y económica de algunos municipios pirenaicos 
+							con menos de 2.000 habitantes. El proyecto SURDIM, financiado con fondos europeos y de una duración de dos años, examina la inmigración 
+							internacional en el entorno rural de los Pirineos. El proyecto estudia las trayectorias de incorporación laboral/económica de los inmigrantes en 
+							los municipios del Pirineo francés y español, a fin de identificar proyectos económicos sostenibles gestionados o respaldados por inmigrantes y 
+							así evidenciar casos de éxito en materia de desarrollo rural. Para ello, se analiza fuentes secundarias y se realiza entrevistas con inmigrantes, 
+							de tal forma que se aporte información nueva acerca de cómo la inmigración favorece el desarrollo rural sostenible.
+						</p>
+						<p><span>Objetivos</span> </p>
+						<p>
+							La inmigración internacional es un fenómeno relativamente poco estudiado en la Europa rural, aunque los inmigrantes pueden evitar procesos de 
+							despoblación y envejecimiento en las áreas rurales. Llenando este vacío de la literatura, el proyecto estudia el papel de los inmigrantes 
+							internacionales en el desarrollo de las economías locales de los municipios de menos de 2.000 habitantes en cuatro áreas del Pirineo francés y 
+							español con mercados laborales de empleo contrastantes. En efecto, los inmigrantes pueden aportar nuevas ideas sobre sostenibilidad en el 
+							desarrollo económico local y revitalizar el tejido social de dichos municipios. En línea con los objetivos del programa Horizonte 2020 de la UE, 
+							el proyecto ayuda a identificar oportunidades económicas relevantes para empresas innovadoras y contribuye a la competitividad y el empleo en las 
+							zonas rurales.   </p>
+						<p>
+							Los objetivos concretos de la investigación son: 1) realizar un ejercicio teórico crítico de la literatura sobre la inmigración internacional en 
+							entornos rurales; 2) analizar las vías de incorporación laboral/económica de los inmigrantes en determinados municipios del Pirineo francés y 
+							español, de cara a identificar proyectos económicos sostenibles gestionados/apoyados por inmigrantes, y presentar experiencias de éxito en términos 
+							de desarrollo rural; 3) estudiar los procesos de asentamiento de inmigrantes en municipios seleccionados, analizando los desafíos para la 
+							incorporación social de este colectivo en las comunidades rurales, toda vez que explora cuestiones relativas al bienestar y aspectos interculturales 
+							de las personas; 4) continuar con la actualización y extensión del Sistema de Información Geográfica (SIG) existente a otras áreas de España y 
+							Francia, con el fin de contribuir a los debates políticos y sociales sobre la inmigración en las zonas rurales. El Objetivo 1 se logrará mediante 
+							una investigación bibliográfica exhaustiva, consistente en recopilar y analizar la literatura científica y de carácter administrativo/divulgativo, 
+							que permita localizar los conceptos y marcos teóricos pertinentes. O2 y O3 se alcanzarán a través del análisis de datos cualitativos primarios 
+							recopilados en entrevistas semiestructuradas con inmigrantes e informantes clave, complementadas con observación participante. El trabajo de campo 
+							para O2 y O3 permitirá la recopilación de material fotográfico a nivel local que se incorporará en un Sistema de Información Geográfico de acceso 
+							abierto, cuya fuente de información principal será los datos estadísticos oficiales (O4). Las principales áreas de investigación del proyecto 
+							SURDIM son los Pirineos de Girona y Huesca (España) y los departamentos de los Pirineos Orientales y los Altos Pirineos (Francia). 
+						</p>
+						<p>Para más información sobre el proyecto SURDIM, consulte   <a hef="https://cordis.europa.eu/project/id/101023968">https://cordis.europa.eu/project/id/101023968</a></p>
+					</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    				
+					</div>
+					
+    			
+    			</div>
+				<div class="row" style="height: 30px;"></div>
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">Proyecto <span>HAMLETS</span> </h2>
+    				</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+
+    				</div>
+					<div class="col-md-10 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    					<!--i class="fa fa-laptop"></i--> 
+    					<p>
+							El proyecto de investigación reciente titulado    <span>“Immigration and sustainable development in small villages”(HAMLETS)</span>,  
+							recibió el apoyo de RecerCaixa2016, un programa impulsado por la Obra Social de" la Caixa" con la colaboración de la Asociación de Universidades 
+							Públicas de Cataluña (ACUP). Se trataba de un proyecto desarrollado desde la Universidad Autónoma de Barcelona (UAB) por un equipo inter-disciplinar 
+							(Departamento de Geografía, LIGIT y ICTA), dirigido por Dr. Ricard Morén-Alegret. Los miembros del equipo durante la última fase del proyecto 
+							HAMLETS fueron (por orden alfabético): William Berthomière, Francesc Boya, Carme Freixa, Eva Gómez, Giorgos Kallis, Ruth McAreavey, Cristóbal 
+							Mendoza, Josepha Milazzo, Laia Mojica, Ricard Morén y Francesc Romagosa. Además de la UAB, el proyecto contó con la participación activa de la 
+							Universidad de Newcastle (UK), el CNRS (Francia, la Asociación de Micropueblos de Cataluña (AMC) y la Asociación de Municipios de Montaña de
+							España (EsMontañas). La duración del proyecto de investigación fue de 3 años a partir de su inicio durante la primavera de 2017, finalizando en 
+							febrero de 2020.
+						</p>
+						<p>
+							La sostenibilidad de los micropueblos (entendidos como municipios con menos de 500 habitantes) está amenazada debido - entre otros factores - a la 
+							despoblación, mientras personas en migración o con proyectos buscan donde vivir. Envejecimiento y despoblamiento hacen estos territorios, a menudo 
+							rurales, más vulnerables a peligros como incendios forestales o especulación descontrolada, amenazando su existencia.
+						</p>
+						<p>
+							En inglés, ‘hamlet’ significa pequeño pueblo y, al mismo tiempo, Hamlet protagoniza una tragedia existencial de William Shakespeare. Este proyecto 
+							investigó la geografía humana, la sostenibilidad y el debate sobre el 'ser o no ser' de los micropueblos, que significan más de un tercio de la 
+							superficie de Cataluña, aunque sólo un 2% de la población del país resida en este territorio. Esta muy baja densidad poblacional es un reto de 
+							grandes dimensiones para el presente y el futuro del país.
+						</p>
+						<p>
+							Así pues, el proyecto HAMLETS informó científicamente a los actores políticos y debatió con ellos. En este sentido, la Asociación de Micropueblos 
+							de Cataluña, entidad de gobiernos locales que agrupa cientos de ayuntamientos de municipios con menos de 500 habitantes, participó activamente 
+							en el proyecto.
+						</p>
+						<p>
+							La hipótesis principal fue que la inmigración (internacional e interna) tiene potencial para contribuir social, económica, medioambiental y 
+							culturalmente al desarrollo sostenible de muchos micropueblos.
+						</p>
+						<p>
+							Durante el periodo 2017-2020, el principal ámbito territorial de estudio y el grueso del trabajo estadístico, documental y de campo se realizó en 
+							la comunidad autónoma de Cataluña, pero también se desarrolló pequeños trabajos de campo comparativos en el Departamento de los Pirineos Orientales
+							 (Francia), la República de Irlanda (Eire) e Irlanda del Norte (Reino Unido).
+						</p>
+						<p>
+							En resumen, los principales objetivos del proyecto HAMLETS fueron: 
+						</p>
+						<ol>
+							<p>
+								<li>Conocer mejor la llegada y asentamiento de inmigrantes a micropueblos a través de trabajo estadístico, trabajo documental y trabajo de campo en algunos municipios con poca población que ya hace años que acogen inmigración</li>
+								<li>Realizar investigación-acción participativa con inmigrantes que ya implementan iniciativas de desarrollo sostenible en micropueblos.</li>
+								<li>Recoger datos y diseñar, con la Asociación de Micropueblos de Cataluña, una página web con un innovador Sistema de Información Geográfica de acceso abierto (GISASH) que ayude estos municipios en la llegada y acogida de recién llegados y permita, asimismo, orientar a potenciales migrantes antes un deseado movimiento migratorio hacia micropueblos.</li>
+								<li>Sus principales métodos de investigación fueron trabajo estadístico, cartográfico y documental, entrevistas semi-estructuradas con inmigrantes internacionales e informantes clave y análisis de datos cualitativos, así como observación participante e investigación-acción.</li>
+							</p>
+						</ol>
+						<p>Para mayor información, véase:   <a hef="https://ods.cat/en/hamlets-immigration-and-sustainable-development-in-small-villages/">https://ods.cat/en/hamlets-immigration-and-sustainable-development-in-small-villages/</a></p>
+					</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    				
+					</div>
+					
+    			
+    			</div>
+				
+    		</div>
+    	</section>
+		
+		 <!-- start service -->
+    	<section id="service">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">DESARROLLO</h2>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-cloud"></i>
+    					<h4>Algunas publicaciones académicas</h4>
+    					<p text-align="left">
+							* Mendoza, C.; Morén-Alegret, R. & McAreavey, R. (2020) <a href="https://journals.openedition.org/belgeo/44107" target="_blank">“(Lifestyle) immigrant entrepreneurs in Spanish small villages: Rethinking international immigration in rural Alt Empordà, Catalonia”, BELGEO. Belgian Journal of Geography, 1 <a href="https://journals.openedition.org/belgeo/44107" target="_blank"></a><br>
+							* Romagosa, F., Mendoza, C.; Mojica, L. & Morén-Alegret, R. (2020) <a href="https://revistas.um.es/turismo/article/view/451861/296221" target="_blank">“Inmigración internacional y turismo en espacios rurales. El caso de los "micropueblos" de Cataluña”. Cuadernos de Turismo, 46, 319-347 </a><br>
+							* Mendoza, C.; Morén-Alegret, R. & McAreavey, R. (2020) <a href="https://www.investigacionesgeograficas.unam.mx/index.php/rig/article/view/60172/54161
+							" target="_blank">“Emprendimiento e inmigración internacional en áreas rurales de España”, Investigaciones Geográficas (Instituto de Geografía de la UNAM), DOI: dx.doi.org/10.14350/rig.60172</a><br>
+							* Morén-Alegret, R. & Mendoza, C. (2021) <a href="https://ojs.ual.es/ojs/index.php/RIEM/article/view/4755" target="_blank"> “Inmigración internacional y sostenibilidad en pueblos pequeños. Retos y oportunidades económicas, ambientales y sociales en el Alt Empordà (Cataluña, España)”, Revista Internacional de Estudios Migratorios, 11(2), pp. 1-35</a><br>
+							* Morén-Alegret, R.; Milazzo, J.; Romagosa, F. & Kallis, G. (2021) <a href="https://sciendo.com/article/10.2478/euco-2021-0018" target="_blank">“‘Cosmovillagers’ as Sustainable Rural Development Actors in Mountain Hamlets? International Immigrant Entrepreneurs’ Perceptions of Sustainability in the Lleida Pyrenees (Catalonia, Spain)”, European Countryside Journal, 13(2), 267-296</a>
+						</p>
+					</div>
+    				<div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					<script>
+						//document.write("<a href=''><i class='fa fa-laptop' ></i></a>");
+						document.write("<a href='https://atlantis.uab.cat/hamlet/public?request_locale=" + document.documentElement.lang +  "'><i class='fa fa-laptop' ></i></a>");
+						</script>
+    					<h4>SIG SURDIM-HAMLETS</h4>
+    					<p>Durante el proyecto HAMLETS (2017-2020) y el proyecto SURDIM (2021-2023) se ha desarrollado una aplicación SIG web que permite publicar y difundir información sobre las características y la gama de servicios disponibles en los municipios rurales. Este Sistema de Información Geográfica (conocido como GISASH, por sus siglas en inglés) se nutre de los datos estadísticos procedentes de los organismos oficiales (por ejemplo, IDESCAT, INE, INSEE o EUROSTAT) y permite realizar análisis cuantitativo, a partir de cartografía detallada y temática. GISASH también permite incorporar material fotográfico. El GISASH está alojado en la UAB gracias a la financiación del Programa RECERCAIXA (una iniciativa de la Asociación Catalana de Universidades Públicas y la Fundación ‘la Caixa’), al Grupo de Investigación sobre Economía Ecológica (ECONECOL, SGR-1126, AGAUR 2017-2021), grupo vinculado al ICTA y al Departamento de Geografía de esta universidad, y a la Unión Europea (proyecto SURDIM). Véase: <br> <a href="https://atlantis.uab.cat/hamlet/public?request_locale=es#">https://atlantis.uab.cat/hamlet/public?request_locale=es#</a></p>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-twitter"></i>
+    					<h4>Comunicación vía twitter</h4>
+    					<p>Desde junio de 2017, en el marco del proyecto de investigación aplicada "HAMLETS. Inmigración y desarrollo sostenible en pueblos pequeños" (2017-2020) 
+							y “SURDIM. Desarrollo rural sostenible e inmigración internacional en los Pirineos (2021-2023), se publican, con ánimo divulgativo, tweets con algunos 
+							datos demo-geográficos y fotos ilustrativas de los municipios con menos de 2000 habitantes del área de estudio. Estas imágenes posteriormente se vincularán 
+							al Sistema de Información Geográfica (GISASH) que se está desarrollando en la UAB. Las etiquetas principales son #HAMLETS #SURDIM y las cuentas de Twitter 
+							que se pueden seguir para recibir información del proyecto son @RicardMoren y @CMendozaPerez. </p>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+		
+<!-- start team -->
+    	<section id="team">
+		
+		<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-lg">
+         <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>			<!-- /modal-header -->
+            <div class="modal-body">
+       
+            </div>			<!-- /modal-body -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>			<!-- /modal-footer -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+    		<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>EQUIPO</span> </h2>
+					</div>
+			
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/mendoza.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Cristóbal Mendoza</h4>
+										<span>SURDIM MSCA Experienced Researcher (ER).</span>
+										<p>Dpt. Geografia. UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Moren.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img1.jpg" class="img-responsive" alt="team img 1"-->
+									<div class="team-des">
+										<h4>Ricard Morén-Alegret</h4>
+										<span>SURDIM Principal Investigator (PI). </span>
+										<p>Dpt. Geografia, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/Kallis.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img4.jpg" class="img-responsive" alt="team img 4"-->
+									<div class="team-des">
+										<h4>Giorgos Kallis</h4>
+										<span>SURDIM co-supervisor and collaborator.</span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/berthomiere.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img4.jpg" class="img-responsive" alt="team img 4"-->
+									<div class="team-des">
+										<h4>William Berthomière</h4>
+										<span>SURDIM co-supervisor and host during secondment.</span>
+										<p>CNRS, France</p>
+									</div>
+							</div>
+						</a>
+					</div>	
+				</div>	
+				<br>
+				<div class="row">
+					
+					
+			
+					
+				</div>
+				<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>COLABORADORES PREVIOS</span> </h2>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img4.jpg" class="img-responsive" alt="team img 4"-->
+									<div class="team-des">
+										<h4>Francesc Boya Alòs</h4>
+										<span>Investigador</span>
+										<p> Asociación Española de Municipios de Montaña</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Cattaneo.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img1.jpg" class="img-responsive" alt="team img 1"-->
+									<div class="team-des">
+										<h4>Claudio Cattaneo</h4>
+										<span>Investigador </span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/Demaria.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Federico Demaria</h4>
+										<span>Investigador</span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Bene.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img3.jpg" class="img-responsive" alt="team img 3"-->
+									<div class="team-des">
+										<h4>Daniela Del Bene</h4>
+										<span>Investigador</span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Freixa.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img1.jpg" class="img-responsive" alt="team img 1"-->
+									<div class="team-des">
+										<h4>Mª Carme Freixa</h4>
+										<span>Investigador</span>
+										<p>Associació de Micropobles de Catalunya</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Gomez.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img3.jpg" class="img-responsive" alt="team img 3"-->
+									<div class="team-des">
+										<h4>Eva Gómez Colell</h4>
+										<span>Investigador</span>
+										<p>Associació de Micropobles de Catalunya</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img4.jpg" class="img-responsive" alt="team img 4"-->
+									<div class="team-des">
+										<h4>Christophe Imbert</h4>
+										<span>Investigador</span>
+										<p>University of Rouen, France</p>
+									</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/McAreavey.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Ruth McAreavey</h4>
+										<span>Investigadora</span>
+										<p>University of Newcastle, UK</p>
+									</div>
+							</div>
+						</a>
+					</div>
+			
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Josepha Milazzo</h4>
+										<span>Investigadora</span>
+										<p>Dept. Geografia, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>	
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Laia Mojica</h4>
+										<span>Investigadora</span>
+										<p>Dept. Geografia, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>	
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/Romagosa.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img2.jpg" class="img-responsive" alt="team img 2"-->
+									<div class="team-des">
+										<h4>Francesc Romagosa</h4>
+										<span>Investigador</span>
+										<p>Dept. Geografia, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>
+			
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+						<a data-toggle="modal"  href="team/Sekulova.html" data-target="#myModal">
+							<div class="team-wrapper">
+								<!--img src="images/team-img4.jpg" class="img-responsive" alt="team img 4"-->
+									<div class="team-des">
+										<h4>Filka Sekulova</h4>
+										<span>Investigadora</span>
+										<p>ICTA, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+						<a data-toggle="modal"  href="team/Vargas.html" data-target="#myModal">
+							<div class="team-wrapper">
+									<div class="team-des">
+										<h4>Miquel Àngel Vargas</h4>
+										<span>Investigador</span>
+										<p>LIGIT, UAB</p>
+									</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+    	</section>
+    	<!-- end team -->
+		
+	
+		<!--inici fotos fi presentacio>
+		<section id="portfolio">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+    					   <img src="images/esponella.jpg" class="img-responsive" alt="portfolio img 1">
+                                <div class="portfolio-overlay">
+                                    <h4>Project One</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/latallada.jpg" class="img-responsive" alt="portfolio img 2">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Two</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/vilamacolum.jpg" class="img-responsive" alt="portfolio img 3">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Three</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/pinell.jpg" class="img-responsive" alt="portfolio img 4">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Four</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- final fotos presentació -->
+
+
+		<section id="links">
+    		<div class="container">
+				<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>ENLACES</span></h2>
+    				</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+
+    				</div>
+					<div class="col-md-6" data-wow-offset="100" data-wow-delay="0.6s">
+    					<!--i class="fa fa-laptop"></i-->
+						<p><h3><a href="https://ec.europa.eu/info/index_es" target="_blank">European Commission</a></h3></p>
+						<p><h3><a href="https://marie-sklodowska-curie-actions.ec.europa.eu/ " target="_blank"><img src="images/2_MSCA.jpg" alt="Logo" style="width:75px;"/></a></h3></p>
+    					<p><h3><a href="https://obrasociallacaixa.org/es" target="_blank">Obra Social de 'la Caixa'</a></h3></p>
+						<p><h3><a href="https://www.acup.cat/es" target="_blank">Associació Catalana d'Universitats Públiques (ACUP)</a></h3></p>					
+						<p><h3><a href="https://www.acup.cat/es/project/recercaixa" target="_blank">RecerCaixa</a></h3></p>
+						<hr>
+						<p><h3><a href="https://www.uab.cat/es" target="_blank">Universitat Autònoma de Barcelona (UAB)</a></h3></p>
+						<p><h3><a href="https://www.micropobles.cat" target="_blank">Associació de Micropobles de Catalunya</a></h3></p>
+						<p><h3><a href="https://www.uab.cat/web/departamento-de-geografia-1345684556259.html" target="_blank">Departament de Geografía UAB</a></h3></p>
+						<p><h3><a href="https://www.uab.cat/web/icta-1345819904158.html" target="_blank">ICTA, UAB</a></h3></p>
+						<p><h3><a href="https://agaur.gencat.cat/es/inici/index.html" target="_blank">AGAUR</a></h3></p>
+						<p><h3><a href="http://geografia.uab.es/migracions/cas/index.htm" target="_blank">GRM-GEO-UAB</a></h3></p>
+						<p><h3><a href="https://twitter.com/Resmi_Red " target="_blank"><image src="../images/LogoREsMiColor.jpg"></image></a></h3></p>
+						<p><h3><a href="https://www.esmontañas.org" target="_blank">Asociación Española de Municipios de Montaña, EsMontañas</a></h3></p>
+						<p><h3><a href="https://www.passages.cnrs.fr/" target="_blank">Passages (CNRS)</a></h3></p>
+						<p><h3><a href="https://camigri.hypotheses.org" target="_blank">CAMIGRI</a></h3></p>
+						<p><h3><a href="https://cordis.europa.eu/project/id/101023968" target="_blank">CORDIS</a></h3></p>
+						<hr>
+						<p><h3><a href="https://twitter.com/LIGIT_UAB/status/1136190424018751488" target="_blank">Eco en los medios de comunicación</a></h3></p>
+						
+					</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+					
+					</div>
+                    <div class="col-md-4 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+					<br>            
+					                       <a class="twitter-timeline" data-height="650"  href="https://twitter.com/RicardMoren?ref_src=twsrc%5Etfw" data-widget-id="917662909785927680"></a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+          
+					</div>
+					<div class="col-md-1 wow fadeIn" data-wow-offset="100" data-wow-delay="0.6s">
+    				
+					</div>
+					
+    			
+    			</div>
+				
+    		</div>
+    	</section>
+    	<!-- end servie -->
+
+    	<!-- start portfolio-->
+    	
+    	<!-- end portfolio -->
+
+    	<!-- start contact -->
+    	<section id="contact">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACTO CON <span>HAMLETS</span></h2>
+    				</div>
+    				<div class="col-md-7 col-sm-7 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+						Si desea contactarnos,  puede enviar un correo a una de las siguientes direcciones: <a href="mailto:cristobal.mendoza@uab.cat?Subject=Hamlets">cristobal.mendoza@uab.cat</a> o <a href="mailto:ricard.moren@uab.cat?Subject=Hamlets">ricard.moren@uab.cat</a>
+    				</div>
+    				<div class="col-md-7 col-sm-7 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+    					<address>
+    						<p class="address-title">DIRECCIÓN</p>
+    						
+    						<!--<p><i class="fa fa-phone"></i> </p>
+    						<p><i class="fa fa-envelope-o"></i></p>-->
+    						<p><i class="fa fa-map-marker"></i> Despacho B9-1068, Departmento de Geografía, Universitat Autònoma de Barcelona, 08193, Bellaterra (Barcelona), España.</p>
+    					</address>
+    					<ul class="social-icon">
+    						<li><h4>SOMOS SOCIALES</h4></li>
+    						<li><a href="https://ca-es.facebook.com/micropobles" target="_blank"class="fa fa-facebook"></a></li>
+    						<li><a href="https://twitter.com/hashtag/micropobles?src=hash" target="_blank" class="fa fa-twitter"></a></li>
+    						<li><a href="https://www.instagram.com/explore/tags/micropobles/?hl=es" target="_blank" class="fa fa-instagram"></a></li>
+    					</ul>
+    				 </div>
+    				 <div class="col-md-12 col-sm-7 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s"style="font-size:12px;text-align:justify;">   					
+    					<br><br><br><br>
+						Se permite la reutilización de los contenidos del GISASH sin ninguna restricción más allá de la citación de la fuente: <u>Fuente: GISASH (2019), HAMLETS Research Project, Bellaterra (Barcelona): UAB / RecerCaixa (Obra Social ‘la Caixa’, ACUP)</u>
+    					<!--* Vuestros datos serán tratados y almacenados en el fichero de datos denominado "Hamlets DB", fichero de datos de carácter personal, inscrito en el  Registre de Protecció de Dades de Catalunya, con el código 217216002-T, de acuerdo con la norma memcionada (Llei 32/2010, de l'1 d'octubre, de l'Autoritat Catalana de Protecció de Dades).-->
+    					
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end contact -->
+
+        <!-- start copyright -->
+       <footer id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+                       	Copyright &copy; 2017 Universitat Autònona de Barcelona <a style="color:inherit;padding-left:15em" href="s://www.blogcounter4free.com" target="_blank">Visitas: <script type="text/javascript" src="//counter.websiteout.net/js/7/5/738/0"></script></a><br /> </p>
+                    </div>
+                </div>
+				
+            </div>
+        </footer>
+        <!-- end copyright -->
+
+	</body>
+</html>

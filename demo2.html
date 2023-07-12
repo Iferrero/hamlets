@@ -1,0 +1,22 @@
+<html><head>
+  <meta name="google-signin-client_id" content="431215871001-5adaa4cc97cggq4esbm41s3rhg2orkit.apps.googleusercontent.com">
+  <meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
+</head><body>
+<script src="jso.js"></script>
+<script>
+var jso = new JSO({
+    providerID: "google",
+    client_id: "431215871001-5adaa4cc97cggq4esbm41s3rhg2orkit.apps.googleusercontent.com",
+    redirect_uri: "https://www.googleapis.com/analytics/v3/data/ga",
+	scope:'https://www.googleapis.com/auth/analytics.readonly',
+    authorization: "https://accounts.google.com/o/oauth2/auth",
+    scopes: { 
+    	request: ["https://www.googleapis.com/auth/userinfo.profile"]
+    }
+});
+//jso.callback();
+jso.getToken().
+		then(function(token) {
+			console.log("I got the token: ", token);
+		});
+</script>

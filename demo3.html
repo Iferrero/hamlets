@@ -1,0 +1,53 @@
+<html><head>
+  <meta name="google-signin-client_id" content="431215871001-5adaa4cc97cggq4esbm41s3rhg2orkit.apps.googleusercontent.com">
+  <meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
+</head><body>
+<script>
+(function(w,d,s,g,js,fs){
+  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
+  js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
+  js.src='https://apis.google.com/js/platform.js';
+  fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
+}(window,document,'script'));
+</script>
+<div style="visibility:hidden" id="embed-api-auth-container"></div>
+<div style="visibility:hidden" id="view-selector-2-container"></div>
+<script>
+
+gapi.analytics.ready(function() {
+
+  /**
+   * Authorize the user immediately if the user has already granted access.
+   * If no access has been created, render an authorize button inside the
+   * element with the ID "embed-api-auth-container".
+   */
+  gapi.analytics.auth.authorize({
+    container: 'embed-api-auth-container',
+    clientid: '431215871001-5adaa4cc97cggq4esbm41s3rhg2orkit.apps.googleusercontent.com'
+  });
+
+
+
+  
+var report = new gapi.analytics.report.Data({
+  query: {
+    ids: 'ga:168522772',
+    metrics: 'ga:pageviews',
+    dimensions: 'ga:date',
+      'start-date': '2017-01-01',
+      'end-date': 'today'
+  }
+});
+
+report.on('success', function(response) {
+	formattedJson = JSON.stringify(response.totalsForAllResults);
+	formattedJson = formattedJson.replace("ga:pageviews","pagines");
+	 obj = JSON.parse(formattedJson);
+  console.log(obj.pagines);
+});
+
+report.execute();
+});
+</script>
+</body>
+</html>
